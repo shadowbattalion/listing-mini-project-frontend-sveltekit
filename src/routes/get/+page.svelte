@@ -1,5 +1,5 @@
 <script>
-    import List from '../../components/list.svelte';
+    import List from '../../components/list/list.svelte';
 </script>
 
 

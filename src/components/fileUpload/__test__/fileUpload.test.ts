@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import {render,  screen} from '@testing-library/svelte'
-import FileUpload from './fileUpload.svelte';
+import FileUpload from '../fileUpload.svelte';
 import userEvent from '@testing-library/user-event';
 
 

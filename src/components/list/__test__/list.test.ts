@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import {render, screen, waitFor} from '@testing-library/svelte'
-import List from './list.svelte';
+import List from '../list.svelte';
 
 
 

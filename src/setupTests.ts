@@ -3,7 +3,6 @@ import { afterEach, beforeAll, afterAll, beforeEach } from 'vitest';
 import { server } from './mocks/server';
 import { cleanup } from '@testing-library/svelte';
 
-beforeEach(()=>{cleanup()})
 
 afterEach(()=>{cleanup()})
 

@@ -88,9 +88,9 @@
         <ul class="pagination">
             <li class="page-item">
                 {#if currentPage > 1}
-                    <button class="page-link" on:click={prev} >Previous</button>
+                    <button class="page-link" data-testid="prev" on:click={prev} >Previous</button>
                 {:else}
-                    <button class="page-link disabled" on:click={prev} >Previous</button>
+                    <button class="page-link disabled" data-testid="next" on:click={prev} >Previous</button>
                 {/if}
             </li>
             {#each {length: totalPages} as _, i}
@@ -110,7 +110,7 @@
         </ul>
     </nav>
     
-    <input type="input" placeholder="Search email" class="form-control form-control-lg" id="formFileLg" on:input={searchHandle}/> 
+    <input  data-testid="search" type="input" placeholder="Search email" class="form-control form-control-lg" id="formFileLg" on:input={searchHandle}/> 
 
     {#each list as item (item.id) }
 
